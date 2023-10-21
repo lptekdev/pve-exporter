@@ -20,4 +20,14 @@ The Exporter is developed taking in consideration that:
 
 Labels include this hierarchy for easy querying.
 Updates will be provided. \
-Thank you.
+
+
+
+### Running and testing ###
+python exporter.py
+
+Open browser at localhost:8000 to populate the metrics
+
+
+
+
