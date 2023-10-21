@@ -1,0 +1,6 @@
+proxmoxer
+requests
+prometheus_client
+pyyaml
+twisted
+klein

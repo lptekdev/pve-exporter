@@ -1,0 +1,4 @@
+user: username@pam
+password: 
+pve:
+  - pve_hostname_or_ip
