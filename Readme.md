@@ -5,10 +5,10 @@ Use the config_copy.yaml file to set the environment \
 Change the name of the config file to config.yaml (system is still in developing and has hardcoded the name of the file to load the Proxmox configurations) \
 Currently, system collects only the following metrics for the Proxmox nodes: \
 
-- Total number of CPUs of the PVE node
-- Status of the PVE node
-- Total RAM memory used on PVE node
-- Total CPU usage of the PVE node
+- Total number of CPUs of the PVE node (number)
+- Status of the PVE node (1 if online, 0 for offline)
+- Total RAM memory used on PVE node (bytes)
+- Total CPU usage of the PVE node (seconds)
 
 \
 Exporter can retrieve metrics from all nodes within the cluster, adding the necessary label value regarding this. \
