@@ -26,7 +26,7 @@ Updates will be provided. \
 ### Running and testing ###
 python exporter.py
 
-Open browser at localhost:8000 to populate the metrics
+Open browser at localhost:8000/metrics to populate the metrics
 
 
 
