@@ -20,7 +20,7 @@ The Exporter is developed taking in consideration that:
 - A PVE node contains 1 or more storage systems
 
 Labels include this hierarchy for easy querying.
-Updates will be provided. \
+Updates will be provided. 
 
 
 
