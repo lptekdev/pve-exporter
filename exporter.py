@@ -60,7 +60,7 @@ class Proxmox:
 
     def login(self):
         try:
-            print("Logging in to proxmox server")
+            print("Logging in to proxmox server: ", self.proxmox_server)
             session = ProxmoxAPI(
                 self.proxmox_server, user=self.username, password=self.password, verify_ssl=False
             )
@@ -68,7 +68,8 @@ class Proxmox:
             return self.proxmox
         
         except Exception as e:
-            print(e)
+            print("Unable to login")
+            print(e)            
             return -1
         
 
