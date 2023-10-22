@@ -1,8 +1,8 @@
 ## Prometheus exporter ##
 
 ### Instructions ###
-Use the config_copy.yaml file to set the environment \
-Change the name of the config file to config.yaml (system is still in developing and has hardcoded the name of the file to load the Proxmox configurations) \
+Use the config_copy.yaml file to set the environment. \
+Change the name of the **config_copy.yaml** file to **config.yaml** (system is still in developing and has hardcoded the name of the file to load the Proxmox configurations). \
 Currently, system collects only the following metrics for the Proxmox nodes: 
 
 - Total number of CPUs of the PVE node (number)
@@ -20,15 +20,22 @@ The Exporter is developed taking in consideration that:
 - A PVE node contains 1 or more storage systems
 
 Labels include this hierarchy for easy querying.
-Updates will be provided. 
+Updates will be provided.
 
+
+## Building docker image ##
+Use the provided Dockerfile in this repository. \
+Run:  **docker build -t pve:latest .** 
+
+You may use the docker-compose.yml file to create the container.
 
 
 ### Running and testing ###
-python exporter.py
+**Locally** \
+python exporter.py \
+Open browser at localhost:8000/metrics to populate the metrics.
 
-Open browser at localhost:8000/metrics to populate the metrics
-
-
+**Container** \
+Open browser at docker_host_ip_address_ordns_name:8000/metrics to populate the metrics.
 
 

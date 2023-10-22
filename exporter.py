@@ -143,7 +143,7 @@ def LoadYAMLConfigFile( file):
     try:
         with open('config.yml', 'r') as file:
             config_file = yaml.safe_load(file)
-            return(config_file['user'],config_file['password'],config_file['pve'], config_file['domain'])
+            return(config_file['user'],config_file['password'],config_file['pve'])
         
     except FileNotFoundError:
         print("file not found")
