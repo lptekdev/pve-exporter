@@ -191,7 +191,7 @@ def CollectMetrics():
             storage_labels = ["cluster","node","storage"]
 
     
-            cluster = None
+            cluster = ""
             print(cluster_details[0])
             if (cluster_details[0] ==1):
                 cluster = cluster_details[1][0]["name"]
